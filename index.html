@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style1.css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
     <title>Grandma's Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
+
 <body>
 
     <nav class="navbar">
+
+        <div class="logo"> <a href=""><img src="Images/logo.svg" alt=""></a> </div>
+
+        <div class="a">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#4">Store</a></li>
+                <li><a href="#2">About</a></li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <i class='fas fa-phone'></i>
+            <span>+ 123 456 789</span>
+        </div>
+        <form class="btb">
+            <div class="btb">
+                <button class="bt1" id="myButton" ><i class="fas fa-shopping-cart"></i> Items</button>
+            </div>
+            
+        </form>
+
+        <div class="nb" id="btnN">
+            <a >
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+</div>
+
         
-            <div class="logo"> <a href=""><img src="Images/logo.svg" alt=""></a> </div>
-                
-            <div class="a">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#4">Store</a></li>
-                    <li><a href="#2">About</a></li>
-                </ul>               
-                </div>
-                    
-                <div class="contact">
-                    <i class='fas fa-phone'></i>
-                    <span>+ 123 456 789</span>
-                </div>
-                    <form class="btb"> <div class="btb">                        
-                        <button class="bt1"><i class="fas fa-shopping-cart"></i> Items</button>
-                    </div></form>
-                    
-                    <div class="nb">
-                      <a href="">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </a>
-                    </div>
     </nav>
+            <div class="mainnavbar" id="mainnavbar1" style="background-color: white;">
+                <a href="" class="mainn">Home</a>
+                <a href="#4" class="mainn">Store</a>
+                <a href="#2" class="mainn">About</a>
+            </div>
+            
+            <div class="cartdiv" style="display: none;" id="cartdiv">
+                <!-- <span id="totalItems">Total items: 0</span>
+                <span id="totalPrice">Total price: $0</span> -->
+            </div>
+
+
 
     <section class="sec1">
         <div class="container1">
@@ -49,168 +69,170 @@
     <section class="sec2" id="2">
         <div class="info">
             <H1>About <strong>Us</strong> </H1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum reiciendis doloremque facilis labore illo deserunt sint, quibusdam accusantium fuga nihil officia exercitationem sed dolor repellendus corporis consequatur ullam quaerat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum reiciendis doloremque facilis
+                labore illo deserunt sint, quibusdam accusantium fuga nihil officia exercitationem sed dolor repellendus
+                corporis consequatur ullam quaerat!</p>
             <button class="b2" onclick="window.location.href='#4'">Explore</button>
         </div>
-        <div class="im"><img src="Images/10.jpeg" alt="" class="" width="540px" height="405"></div>
-        
+        <div class="im">
+            <img src="Images/10.jpeg" alt="" class="" width="540px" height="405">
+        </div>
+
     </section>
 
     <section class="sec3" id="4">
         <div class="title">
-       <h1>Our<strong>Store</strong></h1>     
+            <h1>Our<strong>Store</strong></h1>
         </div>
-        <div class="category"> 
+        <div class="category">
             <ul>
                 <li><button class="cat">All</button></li>
                 <li><button class="cat">Cake</button></li>
                 <li><button class="cat">Sweet</button></li>
                 <li><button class="cat">CupCake</button></li>
                 <li><button class="cat">Doughnuts</button></li>
-            </ul><button class="cat"></button>
+            </ul>
         </div>
 
         <div class="search">
-            <form action="#" class="ser">
-                <button class="se">
-                    <i class="fas fa-search"></i></button>
-                    <input type="text" placeholder="Search..">
-                
+            <form action="#5" class="ser">
+                <button class="se" >
+                    <i class="fas fa-search"></i>
+                </button>
+                <input type="text" placeholder="Search.." id="searchInput">
             </form>
         </div>
-</section>
-    <section class="sec4" >
+    </section>
+    <section class="sec4">
         <div class="items3">
-            <div class="card2">
+           <!-- <div class="card2" data-category="cake">
                 <div class="cimage">
                     <img src="Images/12.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
                 </div>
 
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>Cake Item</h5>
+                    <h4>$5</h4>
                 </div>
             </div>
 
-            <div class="card2">
+            <div class="card2" data-category="doughnuts">
                 <div class="cimage">
                     <img src="Images/21.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
                 </div>
-
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>Doughnuts Item</h5>
+                    <h4>$5</h4>
                 </div>
-            </div><div class="card2">
+            </div>
+            <div class="card2" data-category="cupcake">
                 <div class="cimage">
                     <img src="Images/20.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
                 </div>
 
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>CupCake Item</h5>
+                    <h4>$5</h4>
                 </div>
-            </div><div class="card2">
+            </div>
+            <div class="card2" data-category="cake">
                 <div class="cimage">
                     <img src="Images/19.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
                 </div>
 
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>cake Item</h5>
+                    <h4>$5</h4>
                 </div>
-            </div><div class="card2">
+            </div>
+            <div class="card2" data-category="sweet">
                 <div class="cimage">
                     <img src="Images/18.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
                 </div>
 
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>Sweet Item</h5>
+                    <h4>$5</h4>
                 </div>
             </div>
-            <div class="card2">
+            <div class="card2" data-category="doughnuts">
                 <div class="cimage">
                     <img src="Images/17.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
                 </div>
 
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>Doughnuts Item</h5>
+                    <h4>$5</h4>
                 </div>
             </div>
 
-            <div class="card2">
+            <div class="card2" data-category="cake">
                 <div class="cimage">
                     <img src="Images/16.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
+                    
                 </div>
 
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
-                </div>
-            </div><div class="card2">
-                <div class="cimage">
-                    <img src="Images/15.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
-                </div>
-
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
-                </div>
-            </div><div class="card2">
-                <div class="cimage">
-                    <img src="Images/14.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
-                </div>
-
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
-                </div>
-            </div><div class="card2">
-                <div class="cimage">
-                    <img src="Images/13.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
-                </div>
-
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>Cake Item</h5>
+                    <h4>$5</h4>
                 </div>
             </div>
-            <div class="card2">
+            <div class="card2" data-category="cupcake">
                 <div class="cimage">
                     <img src="Images/11.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
+                    
                 </div>
 
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>CupCake Item</h5>
+                    <h4>$5</h4>
                 </div>
             </div>
-            <div class="card2">
+            <div class="card2" data-category="sweet">
+                <div class="cimage">
+                    <img src="Images/14.jpeg" alt="" class="imcard">
+                    
+                </div>
+
+                <div class="cbody">
+                    <h5>Sweet Item</h5>
+                    <h4>$5</h4>
+                </div>
+            </div>
+            <div class="card2" data-category="doughnuts">
+                <div class="cimage">
+                    <img src="Images/13.jpeg" alt="" class="imcard">
+                    
+                </div>
+
+                <div class="cbody">
+                    <h5>Doughnuts Item</h5>
+                    <h4>$5</h4>
+                </div>
+            </div>
+            <div class="card2" data-category="cupcake">
+                <div class="cimage">
+                    <img src="Images/11.jpeg" alt="" class="imcard">
+                </div>
+
+                <div class="cbody">
+                    <h5>CupCake Item</h5>
+                    <h4>$5</h4>
+                </div>
+            </div>
+            <div class="card2" data-category="sweet">
                 <div class="cimage">
                     <img src="Images/10.jpeg" alt="" class="imcard">
-                    <!-- <span class="itc"><i class="fas fa-shopping-cart"></i></span> -->
                 </div>
 
-                <div class="cbody" >
-                        <h5>Sweet Item</h5>
-                        <h4>$5</h4>
+                <div class="cbody">
+                    <h5>Sweet Item</h5>
+                    <h4>$5</h4>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
-    
+    <script src="jscode.js"></script>
 </body>
+
 </html>

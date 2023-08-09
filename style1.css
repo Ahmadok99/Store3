@@ -85,7 +85,7 @@ li a:hover {
     transition: .5s;
 }
 
-.btb .bt1 {
+.btb .bt1 , .bti{
     position: relative;
     padding: .3rem .2rem;
     /* right: -10rem; */
@@ -162,6 +162,32 @@ li a:hover {
 .container1 h1 span {
     color: #ef7998;
     font-size: 5rem;
+}
+
+.mainnavbar {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    font-size: 1.5rem;
+
+}
+
+.mainnavbar a{
+    padding: 1rem;
+    color: #ef7998;
+    text-decoration: none;
+
+
+}
+
+.mainnavbar a:hover{
+    color: black;
+}
+.showNav{
+    display: flex;
+    
 }
 
 .sec2 {
@@ -530,6 +556,25 @@ li a:hover {
 }
 
 
+.cartdiv{
+    width: 20rem;
+    height: fit-content;
+    z-index: 5;
+    background-color: #f8f6f793;
+    position: absolute;
+    display: inline-block;
+    justify-content: space-between;
+    right: 0;
+    
+}
+
+.listcart{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+
 
 /* @media only screen and (min-width:48.25rem){
     .im img,.sec2 .im::before {
@@ -668,3 +713,8 @@ li a:hover {
     }
 }
 
+.bti{
+    
+
+  
+}
