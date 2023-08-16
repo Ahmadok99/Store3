@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     const carditem = document.querySelectorAll('.card2');
-    const searchitem = document.getElementById('searchInput');
     const categoryBtn = document.querySelectorAll('.cat');
 
 
@@ -153,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let total = 0; // Initialize the total price
         let itemCount = 0; // Initialize the item count
         if (!cartItems.length) {
-            cartDiv.innerHTML = '<p>Your cart is empty.</p>';
+            cartDiv.innerHTML = '<p>Your cart is empty.</p> Total: 0  Item Count : 0'  ;
             total.textContent='0'
             itemCount.textContent='0'
             return;
@@ -194,10 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         const cartSummary = document.createElement('div');
         cartSummary.className = 'cart-summary';
-
-        if (!cartItems.length){
-            cartSummary.innerHTML = `<p>Total:${'0'}  | Item Count: 0</p>`;
-        }else{cartSummary.innerHTML = `<p>Total: $${total.toFixed(2)} | Item Count: ${itemCount}</p>`;}
+        cartSummary.innerHTML = `<p>Total: $${total.toFixed(2)} | Item Count: ${itemCount}</p>`;
         
         cartDiv.appendChild(cartSummary);
     }
