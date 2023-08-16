@@ -23,7 +23,6 @@ body {
 }
 
 .navbar {
-    /* position: relative; */
     background-color: white;
     display: flex;
     align-items: center;
@@ -85,10 +84,9 @@ li a:hover {
     transition: .5s;
 }
 
-.btb .bt1 , .bti{
+.btb .bt1 , .button-cart{
     position: relative;
     padding: .3rem .2rem;
-    /* right: -10rem; */
     background-color: transparent;
     border-radius: .3rem;
     font-size: 1rem;
@@ -101,15 +99,6 @@ li a:hover {
 
 
 
-
-
-/* .menubar div {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    display: none;
-} */
 .contact{
     position: relative;
     left: -4rem;
@@ -215,7 +204,6 @@ li a:hover {
     position: relative;
     justify-content: center;
     align-items: center;
-    /* padding-right: ; */
 }
 
 .sec2 .info {
@@ -319,7 +307,6 @@ li a:hover {
 }
 
 .category {
- 
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -554,7 +541,7 @@ li a:hover {
 }
 
 
-.cartdiv{
+.cart-div{
     width: 20rem;
     height: fit-content;
     z-index: 5;
@@ -574,89 +561,8 @@ li a:hover {
 
 
 
-/* @media only screen and (min-width:48.25rem){
-    .im img,.sec2 .im::before {
-        width:28.125rem;
-        height: 21.125rem;
-    }
-    
-    .sec2 .im::before {
-
-        content: '';
-        position: absolute;
-        top: -5%;
-        left: -10%;
-        width:28.125rem;
-        height: 21.125rem;
-        border: .4rem solid #fdffa1;
-        transition: .5s;
-        z-index: 0;
-    
-    }
-    
-    .sec2 .im:hover:before {
-        content: '';
-        position: absolute;
-        top: -.39rem;
-        left: -.4rem;
-        width:28.125rem;
-        height: 21.125rem;
-        border: .4rem solid #fdffa1;
-        transition: .5s;
-        z-index: 0;
-    }
-    .cimage img {
-        width: 20rem;
-        height: 18.0625rem;
-    }
-
-
-    
-} */
-
-/* @media only screen and (min-width:0){
-
-        .cimage img {
-            width: 310px;
-            height: 270px;
-        }    } */
-
-        /* @media only screen and (min-width:75rem){
-            .im img,.sec2 .im::before {
-                width:33.75rem;
-                height: 33.75rem;
-            }
-            
-            .sec2 .im::before {
-        
-                content: '';
-                position: absolute;
-                top: -5%;
-                left: -10%;
-                width:33.75rem;
-                height: 33.75rem;
-                border: .4rem solid #fdffa1;
-                transition: .5s;
-                z-index: 0;
-            
-            }
-            
-            .sec2 .im:hover:before {
-                content: '';
-                position: absolute;
-                top: -.39rem;
-                left: -.4rem;
-                width: 28.125rem;
-                height: 21.125rem;
-                border: .4rem solid #fdffa1;
-                transition: .5s;
-                z-index: 0;
-            }
-        
-        } */
 
         @media only screen and (max-width:60.625rem) {
-  
             .a, .contact, .btb {
                 display: none;
         
